@@ -1,40 +1,36 @@
-@media screen and (min-width: 300px) and (max-width: 400px) {
-    nav h1 a {
-        font-size: 0.8em;
-        letter-spacing: 6px;
+@media only screen and (max-width: 768px) {
+    header{
+        position: sticky;
     }
-    .filter-options h2 {
-        font-size: 1em;
-    }
-    .filter-options select {
-        font-size: 1em;
-        width: 70%;
-    }
-    #restaurant-name {
-        font-size: 1.5em;
-    }
-    #restaurant-address {
-        font-size: 1.1em;
-    }
-    #restaurant-hours {
+    .inside #map-container{
+        position: relative;
+        height: 300px;
         width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        margin-top: -80px;
+    
     }
-    #map {
-        height: 150px;
-        margin-bottom: 20px;
+    .inside header {
+      position: sticky;
+      top: 0;
+      width: 100%;
     }
-    #reviews-list {
-        width: 90%;
-        margin-left: 10px;
+    #breadcrumb {
+      padding: 10px 40px 16px;
+      list-style: none;
+      background-color: #eee;
+      font-size: 17px;
+      margin: 0;
+      width: calc(100% - 80px);
+  }
+  #restaurant-container, #reviews-container {
+    border-bottom: 1px solid #502532;
+    border-top: 1px solid #fff;
+    padding: 140px 10px 30px;
+    width: calc(100% - 20px );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
     }
-}
-
-@media screen and (max-width: 450px) {
-    nav h1 a {
-        letter-spacing: 5px;
-    }
-}
-
-@media screen and (min-width: 451px) and (max-width: 850px) {}
+   
